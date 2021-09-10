@@ -1,6 +1,6 @@
 import React from "react";
 import MovieCard from "./MovieCard";
-
+import SocialMedia from "./SocialMedia";
 function App() {
   const title = "Mad Max";
   const posterURL =
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <MovieCard title={title} posterSrc={posterURL} genres={genresArr} />{" "}
-      <SocialMedia links={socialLinks} />
+      <SocialMedia socialLinks={socialLinks} />
     </div>
   );
 }
